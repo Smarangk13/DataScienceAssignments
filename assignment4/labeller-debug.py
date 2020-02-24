@@ -1,9 +1,3 @@
-#!/usr/bin/env python
-# coding: utf-8
-
-# In[1]:
-
-
 import pandas as pd
 import numpy as np
 import os
@@ -22,10 +16,6 @@ days = []
 for line in lines:
     days.append(line.split(','))
 
-
-# In[2]:
-
-
 # print(days)
 yearIndex = 1
 yearWeekIndex = 6
@@ -35,10 +25,6 @@ lowIndex = 9
 closeIndex = 10
 volIndex = 11
 
-
-# In[3]:
-
-
 i = 1
 while days[i][yearIndex]!='2018':
     i += 1
@@ -46,20 +32,12 @@ while days[i][yearIndex]!='2018':
 days2018 = days[i:]
 print(days2018)
 
-
-# In[4]:
-
-
 def calculateSD(nums,mean):
     s = 0
     for n in nums:
         s += (mean-n)**2
     r = (s/len(nums))**0.5
     return r
-
-
-# In[9]:
-
 
 weeks = []
 currentWeek = days2018[0][yearWeekIndex]
@@ -129,12 +107,6 @@ for i,day in enumerate(days2018):
         weeks.append(week)
         weekMean = 0
 
-# print(weeks)
-
-
-# In[47]:
-
-
 for week in weeks:
     if week[2] > week[1]:
         week.append('Good')
@@ -143,26 +115,9 @@ for week in weeks:
 
 print(weeks)
 
-
-# In[60]:
-
-
 print('Year-Week,Open,Close,High,Low,Volume,Label')
 for week in weeks:
     res = ''
     for i in week:
         res += str(i)+','
     print(res[:-1])
-
-
-# In[59]:
-
-
-weeks[53]
-
-
-# In[ ]:
-
-
-
-
