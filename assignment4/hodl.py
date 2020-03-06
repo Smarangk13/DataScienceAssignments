@@ -89,7 +89,7 @@ def labelTrading(weekly, money):
 # Question 1
 print('\nQuestion 1')
 revenue = labelTrading(weeks[:53], money=startingAmount)
-print('Total Profit for year 1with labels = ', revenue - 100)
+print('Total Profit for year 1 with labels = ', revenue - 100)
 
 # Question 2
 print('\nQuestion 2')

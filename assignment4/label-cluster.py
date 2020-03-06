@@ -49,6 +49,9 @@ fig2018 = plt.figure()
 pl2018 = fig2018.add_subplot(111)
 pl2018.scatter(mean2018Good,sd2018Good, c='green')
 pl2018.scatter(mean2018Bad,sd2018Bad, c='red')
+p0 = [0.5,0]
+p1 = [0,0.5]
+pl2018.plot(p0,p1)
 plt.show()
 
 # Part 2
