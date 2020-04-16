@@ -49,8 +49,8 @@ def pointPrinter(data, anotate=True):
         lab = weeks[i][5:]
         plt.annotate(lab, (meanBad[i], sdBad[i]))
 
-    p0 = [0.1, 1]
-    p1 = [1, 0.2]
+    p0 = [0.05, 1]
+    p1 = [0.98, 0.18]
     pl.plot(p0, p1)
 
     plt.show()
