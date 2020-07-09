@@ -171,7 +171,7 @@ print('We can see that the returns increase by increasing the window upto a cert
 # Question 3
 print()
 print('Question 3')
-print('Best combination for 2017 fow W,K = ', ranger(2018, days))
+print('Best combination for 2018 fow W,K = ', ranger(2018, days))
 
 print('In 2018 there was a big drop in the prices for coca cola, this made tge stock fluctuate more causing a bigger '
       'standard deviation. This is why we can see bigger bubbles on the right side for this graph')
